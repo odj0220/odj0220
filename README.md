@@ -11,7 +11,7 @@
         - BFF 에서 연결된 Backend 를 걷어내고 googleapi를 이용하여 [골라라tv](https://www.youtube.com/channel/UCQU44DD_X3LwgHjTPvs9LvQ) 컨텐츠 업데이트시 자동으로 firestore 데이터 업데이트 및 BFF 연동 작업
         - android webview 를 이용하여 콘핑 앱 개발
         - web 과 app 간의 interface 및 딥링크(공유) 구현
-    - APP (배포 검토중)
+    - [APP](https://play.google.com/store/apps/details?id=com.dj.conping)
     - [WEB(모바일)](https://conping-yqoln5urha-an.a.run.app)
 ***
 ## 골라라 (2021.08  ~ 2022.07)
