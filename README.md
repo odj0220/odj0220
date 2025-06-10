@@ -1,43 +1,24 @@
 # 경력
-***
 ## 와그 (2022.09  ~ 2025.05)
 ### 담당업무
 프론트앤드 개발, 웹 팀장
 ### 프로젝트
 - 와그 웹 신규기능 추가 및 유지보수
-    - 기본 레거시 사이트 내용들을 모던으로 이관
-    - PagesRouter 에서 AppRouter 방식으로 변경 (next12 > next14)
-    - react19로 변경되면서 기존코드에서 동작하지 않는 부분들 마이그레이션 (next14 > next15)
-    - nginx를 이용한 무중단배포 구현
-    - 와그 모바일 웹 바이탈이 90% 나쁨에서 > 95% 좋음 개선
-    - elk 구축하여 로그 및 마케팅데이터 수집
-    - 마케팅 데이터 분석용 시각화
+    - Next.js 12 → 14 → 15(App Router) 전환, React 19 대응 마이그레이션
+    - nginx 기반 무중단 배포 환경 구축
+    - 웹 바이탈 점수 90% 나쁨 → 95% 좋음으로 개선
+    - ELK 스택을 이용한 로그 및 마케팅 데이터 수집 및 시각화
 - 와그 모던 개발 (2022.09  ~ 2023.06)
     - 개요: 기존 레거시 와그웹을 대신하여 next.js 12버전으로 신규개발
     - 참여기술: next.js, react, nestJS
     - 역활 및 성과:
-        - SEO 구조화된 데이터 작업
-        - 웹 바이탈 최적화 작업
-        - STG 서버 구축
-        - BFF 도입
-        - winston을 이용한 서버 로그 추가
-        - aws, jenkins, codeDeploy를 이용한 cicd 구축
-        - GTM 도입, 마케팅스크립트와 코드 분리
-***
-## ~~팀 골라라 프론트 (2022.07  ~ 2022.08)~~
-프론트 팀의 환상적인 팀웍으로 골라라에서 마지막 한달동안 작업한 **콘핑**이 세상에 나오지도 못한게 아까워 Backend 와 Flutter App 을 걷어내고 서버리스로 프로젝트를 진행
-### 프로젝트
-- 콘핑 (2022.07  ~ 2022.08)
-    - 개요: 골라라tv 컨텐츠와 네이버 쇼핑에 업로드하는 상품으로 콘텐츠 커머스 플랫폼을 완성하고자 했으나 계획이 무산되어 상품을 제외한 나머지 기능 구현
-    - 참여기술: sveltekit, typescript, graphql, googleapis, firestore, gcp  
-    - 역활 및 성과:
-        - BFF(Backend For Frontend) 구현 담당
-        - BFF 에서 연결된 Backend 를 걷어내고 googleapi를 이용하여 [골라라tv](https://www.youtube.com/channel/UCQU44DD_X3LwgHjTPvs9LvQ) 컨텐츠 업데이트시 자동으로 firestore 데이터 업데이트 및 BFF 연동 작업
-        - android webview 를 이용하여 콘핑 앱 개발
-        - web 과 app 간의 interface 및 딥링크(공유) 구현
-    - [APP](https://play.google.com/store/apps/details?id=com.dj.conping)(안드로이드 개발자 계정 유지 못해서 앱 내려감)
-    - [WEB(모바일)](https://conping-yqoln5urha-an.a.run.app)
-***
+        - 아키텍처 설계 및 모노레포 도입
+        - SEO 구조화 마크업, 웹 바이탈 최적화
+        - BFF(Backend for Frontend) 구조 설계 및 도입
+        - STG 서버 구축 및 운영 환경 분리
+        - winston을 이용한 서버 로그 관리
+        - GTM 연동 및 마케팅 스크립트 분리
+        - AWS + Jenkins + CodeDeploy 기반 CI/CD 구축
 ## 골라라 (2021.08  ~ 2022.07)
 ### 담당업무
 프론트앤드 개발
@@ -63,7 +44,6 @@
     - 역활 및 성과:
         - 유지보수
         - Angular 7 > 13 마이그레이션
-***
 ## 와이즈패션 (2020.03  ~ 2021.07)
 ### 담당업무
 프론트앤드 개발
@@ -87,7 +67,6 @@
     - 역활 및 성과:
         - 유지보수
         - MD톡톡 기능 angular 모듈로 분리
-***
 ## 지볼티코리아 (2016.11 ~ 2020.02)
 ### 담당업무
 연구개발, 원시 데이터를 이용하여 웹으로 시각화하는 부분을 담당.
@@ -108,18 +87,6 @@
     - 역활 및 성과:
       - Field Test 를 진행할 Web & Android App 개발
       - 실시간 데이터 시각화 구현
-***
-## ~~휴식2 (2016.08 ~ 2016.10)~~
-### 담당업무
-자기개발을 위한 휴식기
-### 프로젝트
-- DJ Cloud for Node (2016.08~2016.09)
-    - 개요: MEAN 스택을 이용하여 웹하드 구현
-    - 참여기술: MongoDB, Express, AngularJS, Node, jquery
-    - 주요기능 :
-        - 반응형 웹, 멀티 파일 및 폴더 다운로드, 미디어 플레이어 및 미디어 뷰어
-        - https://www.youtube.com/watch?v=xy73_Ov6BOk
-***
 ## k4m (2016.01 ~ 2016.07)
 ### 담당업무
 si, sm
@@ -138,7 +105,6 @@ si, sm
     - 역활 및 성과:
         - 정보공개 API를 통해 자료를 받아와 d3.js를 이용하여 화면을 조작 및 터치하여 체험하는 사이트 구성
         - 아이디어 제안 및 개발
-***
 ## 이노아이씨티 (2014.10 ~ 2015.12)
 ### 담당업무
 시각화 프로그램 설계 및 개발
@@ -151,20 +117,6 @@ si, sm
     - 역활 및 성과:
         - AngularJS, D3.js, crossfilter.js 등을 이용하여 시각화 프로그램 i3ware개발
         - 설계, 개발, 디자인 담당
-        
-***
-## ~~휴식1 (2014.06 ~ 2014.09)~~
-### 담당업무
-회사 업무에 신경쓰지 않고 Java를 다뤄보고 싶어서 자기개발을 위한 휴식기
-### 프로젝트
-- DJ Cloud for Java (2014.06~2014.08)
-  - 개요: Java 공부를 하기위해 Java 와 jquery를 이용한 웹하드 구현
-  - 참여기술: Java, Mybatis, Servlet, JSTL, jquery, MariaDB
-  - 주요기능 :
-    - 언어 선택, 미디어 뷰어 (이미지/동영상), 드래그/멀티/폴더 업로드, ContextMenu, 모바일 웹
-    - https://firebasestorage.googleapis.com/v0/b/conpingstore.appspot.com/o/djcloud.pdf?alt=media&token=3954213c-e7b4-4dec-a350-1ae61a7b164c
-
-***
 ## 미네르바 소프트 (2013.04 ~ 2014.05)
 ### 담당업무
 MagicCloud 개발 담당, 보안USB DB 담당
@@ -183,6 +135,42 @@ MagicCloud 개발 담당, 보안USB DB 담당
   - 역할 및 성과:
     - 보안 USB 웹 페이지 유지보수
     - 보안 USB DB 데이터 관리
+
+# 기타 프로젝트
+## 팀 골라라 프론트 (2022.07  ~ 2022.08)
+프론트 팀의 환상적인 팀웍으로 골라라에서 마지막 한달동안 작업한 **콘핑**이 세상에 나오지도 못한게 아까워 Backend 와 Flutter App 을 걷어내고 서버리스로 프로젝트를 진행
+### 프로젝트
+- 콘핑 (2022.07  ~ 2022.08)
+    - 개요: 골라라tv 컨텐츠와 네이버 쇼핑에 업로드하는 상품으로 콘텐츠 커머스 플랫폼을 완성하고자 했으나 계획이 무산되어 상품을 제외한 나머지 기능 구현
+    - 참여기술: sveltekit, typescript, graphql, googleapis, firestore, gcp  
+    - 역활 및 성과:
+        - BFF(Backend For Frontend) 구현 담당
+        - BFF 에서 연결된 Backend 를 걷어내고 googleapi를 이용하여 [골라라tv](https://www.youtube.com/channel/UCQU44DD_X3LwgHjTPvs9LvQ) 컨텐츠 업데이트시 자동으로 firestore 데이터 업데이트 및 BFF 연동 작업
+        - android webview 를 이용하여 콘핑 앱 개발
+        - web 과 app 간의 interface 및 딥링크(공유) 구현
+    - [APP](https://play.google.com/store/apps/details?id=com.dj.conping)(안드로이드 개발자 계정 유지 못해서 앱 내려감)
+    - [WEB(모바일)](https://conping-yqoln5urha-an.a.run.app)
+## 휴식2 (2016.08 ~ 2016.10)
+### 담당업무
+자기개발을 위한 휴식기
+### 프로젝트
+- DJ Cloud for Node (2016.08~2016.09)
+    - 개요: MEAN 스택을 이용하여 웹하드 구현
+    - 참여기술: MongoDB, Express, AngularJS, Node, jquery
+    - 주요기능 :
+        - 반응형 웹, 멀티 파일 및 폴더 다운로드, 미디어 플레이어 및 미디어 뷰어
+        - https://www.youtube.com/watch?v=xy73_Ov6BOk
+## 휴식1 (2014.06 ~ 2014.09)
+### 담당업무
+회사 업무에 신경쓰지 않고 Java를 다뤄보고 싶어서 자기개발을 위한 휴식기
+### 프로젝트
+- DJ Cloud for Java (2014.06~2014.08)
+  - 개요: Java 공부를 하기위해 Java 와 jquery를 이용한 웹하드 구현
+  - 참여기술: Java, Mybatis, Servlet, JSTL, jquery, MariaDB
+  - 주요기능 :
+    - 언어 선택, 미디어 뷰어 (이미지/동영상), 드래그/멀티/폴더 업로드, ContextMenu, 모바일 웹
+    - https://firebasestorage.googleapis.com/v0/b/conpingstore.appspot.com/o/djcloud.pdf?alt=media&token=3954213c-e7b4-4dec-a350-1ae61a7b164c
+
 
 # 기술
 - Java
