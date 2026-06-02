@@ -1,4 +1,91 @@
 # 경력
+## 피트릭스 (2026.02 ~ 현재)
+### 담당업무
+개발팀장, 백엔드 · 프론트엔드 전반 관리
+### 프로젝트
+- Fittrix 스마트미러 측정 서비스 백엔드 (2026.02 ~ 현재)
+  * **What:** 스마트미러 기반 체형·체성분 측정 서비스의 멀티 테넌트 API 서버 개발 및 운영
+  * **How:**
+    + 체형·자세·스크리닝·골프·다이어트 등 도메인별 PDF 리포트 v2 API 신규 설계·런칭 (v2.4 → v2.9 단독 주도)
+    + 4개 언어(한/영/일/번체중국어) 다국어 리포트 지원 및 미지원 언어 자동 폴백 구현
+    + FootPressure·PelvisTilt·Shoulder·Spine 등 자세 측정 등급 경계값 전면 보정 (round → floor 일관화)
+    + 심각도 기반 worst-item 선정 + 예측모델 rank 정렬 기준 재정의로 리포트 추천 정확도 개선
+    + Unity 클라이언트와 측정 항목 등급 판정 스펙 통일(SSOT 문서화)
+    + GitHub Actions 기반 CI/CD 구축 (Azure Container Apps 자동 배포)
+    + Claude API 활용 릴리즈 노트 자동 생성 + GitHub Release 자동 발행
+    + MS Teams Adaptive Card 자동 알림 + Notion 배포 이력 자동 기록
+    + Claude Code PR 자동 리뷰 도입으로 코드 리뷰 1차 게이트 자동화
+    + Admin 구독 관리 시스템 신규 구축 (플랜·미러별 user_count 집계), Stripe 연동
+    + 카카오/구글 소셜 로그인 + 비밀번호 재설정 API 구현, 레거시(phone-only) 계정 무중단 연동
+    + 파일 백업을 Azure Blob 직통 스트림 업로드로 전환 (디스크 경유 제거)
+    + RabbitMQ 재연결 무한 루프 버그 수정, 미사용 BullMQ/Redis/MongoDB 코드 정리
+  * **Impact:**
+    + 리포트 v2 런칭으로 신규 매출 채널 기반 마련
+    + 일본·대만 해외 서비스 확장 기반 확보, 다국어 표시 장애 0건화
+    + 클라이언트–서버 등급 불일치 이슈 구조적 제거
+    + 수동 배포 프로세스 및 릴리즈 문서화 수작업 제거로 릴리즈 운영 부담 해소
+    + 메모리·디스크 부하 감소 및 기술 부채 제거
+- Fittrix Admin — 운영 관리자 콘솔 (2026.02 ~ 현재)
+  * **What:** 백엔드에 jQuery로 임베디드돼 있던 레거시 관리 화면을 독립 프론트엔드 서버로 분리·재구축
+  * **How:**
+    + Next.js 15 (App Router) · React 19 기반 독립 콘솔 신규 구축
+    + 인증·사이드바 레이아웃·API 클라이언트 구조 설계 (토큰 만료 시 세션 안정화)
+    + 테마/모드/버전, 그룹·미러·관리자 계정, QnA·문의, CDN 관리 기능 단독 구현
+    + 구독·결제내역 관리 화면 구축 (플랜·미러별 집계, 수기/정기 결제 판단)
+    + InvoicePopup 공통 컴포넌트 추출로 타 앱과 재사용
+  * **Impact:**
+    + jQuery 임베디드 구조 탈피, 독립 서비스로 유지보수성·확장성 확보
+    + B2B 과금 운영 화면 일원화
+  * **Legacy → Now:** jQuery (백엔드 임베디드) → Next.js 15 · React 19 · TypeScript · Radix UI · Tailwind CSS · i18next
+- Fittrix Studio — 센터 운영 대시보드 (2026.02 ~ 현재)
+  * **What:** 피트니스 센터 운영자용 회원·검사·결제 관리 대시보드 마이그레이션 및 기능 확장
+  * **How:**
+    + React 19 + Vite + React Router DOM 기반 앱을 Next.js 15 App Router로 이관
+    + react-router-dom 호출을 자체 navigation 호환 레이어로 치환, SSR 환경 하이드레이션 오류 구조적 해소
+    + Stripe·TossPayments SDK 연동, 구독 상태 기반 접근 통제 일원화
+    + Recharts·커스텀 차트로 누적 검사 추이 시각화 (결측월 라인 끊김·라벨 클리핑 버그 해소)
+    + InBody·MBTI Unity WebGL을 postMessage 브릿지로 연동
+    + TanStack Query optimistic update로 상태 토글 즉시 반영, queryClient 싱글톤화로 캐싱 버그 제거
+  * **Impact:**
+    + 레거시 React/Vite 구조를 Next.js 기반으로 현대화, 유지보수성 개선
+    + 결제 플로우 통합으로 B2B 구독 과금 체계 정립
+  * **Legacy → Now:** React 19 + Vite + React Router DOM → Next.js 15 · TanStack Query · Stripe · TossPayments · Recharts · Radix UI · dnd-kit · Unity WebGL · Tailwind CSS
+- Fittrix Report — 측정 리포트 뷰어 (2026.02 ~ 현재)
+  * **What:** Vue 기반 레거시 리포트 서비스를 Next.js로 이관하고 리포트 v2 전면 재설계
+  * **How:**
+    + Vue SFC 26개 + vue-i18n + @coreui/vue-chartjs 구성을 Next.js 15 · react-i18next · react-chartjs-2로 전면 이관 (27개 TSX 변환)
+    + 체형·자세·스크리닝·골프·다이어트 등 도메인별 리포트 v2 화면 신규 설계·런칭 (v2.4 → v2.5 단독 주도)
+    + Chart.js 레이더 차트를 커스텀 SVG 차트로 대체 (골프 스윙 탄도 등 도메인 특화 시각화)
+    + A4 PDF 출력 대응 (iOS Safari 스케일링 이슈 해결, 화면-인쇄 일관성 확보)
+    + 4개 언어 리포트 지원, x-language 헤더 전파 + 미지원 locale 자동 폴백
+    + PDF 로직을 @fx-fe/report-pdf 공유 패키지로 추출, 사용자 앱과 공용화
+  * **Impact:**
+    + 리포트 v2 사용자 접점 완성으로 신규 매출 채널 지원
+    + 해외(일본·대만) 확장 기반 마련, 다국어 표시 장애 0건화
+  * **Legacy → Now:** Vue + vue-i18n + @coreui/vue-chartjs → Next.js 15 · 커스텀 SVG 차트 · react-chartjs-2 · react-i18next · Tailwind CSS
+- Fittrix App — 사용자 클라이언트 (2026.02 ~ 현재)
+  * **What:** React + Vite 기반 사용자 앱을 Next.js로 마이그레이션하고 소셜 로그인·AI 리포트 진입 흐름 구현
+  * **How:**
+    + React 19 + Vite + React Router DOM 7 기반 앱을 Next.js 15 App Router로 이관
+    + 카카오/구글 OAuth 소셜 로그인 + 비밀번호 재설정 구현 (컨테이너 내부 redirect_uri 문제 해결)
+    + 회원가입 전화번호 국가 자동 감지, 카카오 이름·gender fallback 등 가입 실패 요인 저감
+    + 구독 여부에 따라 분기되는 AI 리포트 팝업 구현 (Safari 드래그 스크롤 대응)
+    + DOMPurify 적용·쿠키 Secure 플래그 등 보안 이슈 정리, Suspense 경계 처리로 prerender 빌드 에러 해소
+    + @fx-fe/report-pdf 공유 패키지 연동
+  * **Impact:**
+    + 레거시 탈피 및 소셜 로그인 도입으로 사용자 접근성·편의성 향상
+    + 가입 실패율 저감 및 보안 강화
+  * **Legacy → Now:** React 19 + Vite + React Router DOM 7 → Next.js 15 · OAuth(Kakao/Google) · Chart.js · QR Scanner · i18next · Tailwind CSS
+- 프론트 공통 인프라 (2026.02 ~ 현재)
+  * **What:** 4개 프론트엔드 앱을 통합하는 모노레포 인프라 및 배포 자동화 파이프라인 구축
+  * **How:**
+    + Turborepo + pnpm 모노레포 통합, 공통 패키지(@fx-fe/ui·utils·report-pdf) 추출
+    + GitHub Actions 변경 감지 선택적 빌드 → Azure Container Apps 자동 배포
+    + v<버전>-<앱> 태그 트리거 릴리즈, Claude API 릴리즈 노트 자동 생성 + GitHub Release 자동 발행
+    + Teams·Notion 배포 자동 기록, Claude Code PR 자동 리뷰
+  * **Impact:**
+    + 4개 앱 통합 관리로 개발 생산성 및 코드 재사용성 향상
+    + 전체 배포 파이프라인 자동화로 릴리즈 운영 부담 제거
 ## 와그 (2022.09  ~ 2025.05)
 ### 담당업무
 프론트앤드 개발, 웹 팀장
