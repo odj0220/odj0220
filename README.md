@@ -335,7 +335,89 @@ si, sm
 기업 흡수합병
 
 ### 프로젝트
+- i3ware (2014.10~2015.12)
+    - **What:** AngularJS + D3.js 기반 시각화 소프트웨어 개발
+    - **How:**
+        - MEAN 스택 기반 아키텍쳐 설계 및 개발
+        - Crossfilter.js 활용, UI 설계 및 개발
+    - **Impact:** 데이터 분석 및 시각화 SW 개발
+## 미네르바 소프트 (2013.04 ~ 2014.05)
+### 담당업무
+MagicCloud 개발 담당, 보안USB DB 담당
+### 퇴사사유
+개인사정
+### 프로젝트
+- Magic Cloud (2013.10~2014.03)
+    - **What:** 문서중앙화 Web App 개발
+    - **How:** PHP, jQuery 기반 사용자 관리·게시판·공유 그룹 기능 개발
+    - **Impact:** 사내 문서 공유 및 관리 효율성 증대
+- 보안 USB (2013.10~2014.03)
+    - **What:** 보안 USB 웹 페이지 및 DB 관리
+    - **How:** Java, MS-SQL 기반 시스템 유지보수
+    - **Impact:** 안정적 서비스 운영 지원
 
-* i3ware (2014.10~2015.12)
+# 기타 프로젝트
+## 팀 골라라 프론트 (2022.07  ~ 2022.08)
+프론트 팀의 환상적인 팀웍으로 골라라에서 마지막 한달동안 작업한 **콘핑**이 세상에 나오지도 못한게 아까워 Backend 와 Flutter App 을 걷어내고 서버리스로 프로젝트를 진행
+### 프로젝트
+- 콘핑 (2022.07  ~ 2022.08)
+    - 개요
+        - 골라라tv 콘텐츠와 네이버 쇼핑 상품 연동 콘텐츠 커머스 플랫폼 개발 프로젝트 (상품 제외 기능 구현)
+    - 성과
+        - Backend 및 Flutter 앱 제거 후 서버리스 아키텍처로 전환하여 개발 진행
+        - BFF(Backend For Frontend) 구현 및 Backend 연결 해제 후 Google API 기반 자동 데이터 연동 구축
+        - Android WebView를 활용한 콘핑 앱 개발
+        - 웹과 앱 간 인터페이스 및 딥링크(공유) 기능 구현
+    - 상세 역할
+        - BFF 구현 및 Google API [골라라tv](https://www.youtube.com/channel/UCQU44DD_X3LwgHjTPvs9LvQ) 연동 담당
+        - Android WebView 앱 개발 및 딥링크 기능 개발
+        - Firestore 데이터 자동 업데이트 로직 구현
+    - 참여기술
+        - SvelteKit, TypeScript, GraphQL, Google APIs, Firestore, GCP
+    - 링크
+        - [콘핑 웹(모바일)](https://conping-yqoln5urha-an.a.run.app)
+        - [콘핑 앱 (구글 플레이)](https://play.google.com/store/apps/details?id=com.dj.conping) (현재 앱은 계정 문제로 내려감)
+## 휴식2 (2016.08 ~ 2016.10)
+### 담당업무
+자기개발을 위한 휴식기
+### 프로젝트
+- DJ Cloud for Node (2016.08~2016.09)
+    - 개요: MEAN 스택을 이용하여 웹하드 구현
+    - 참여기술: MongoDB, Express, AngularJS, Node, jquery
+    - 주요기능 :
+        - 반응형 웹, 멀티 파일 및 폴더 다운로드, 미디어 플레이어 및 미디어 뷰어
+        - https://www.youtube.com/watch?v=xy73_Ov6BOk
+## 휴식1 (2014.06 ~ 2014.09)
+### 담당업무
+회사 업무에 신경쓰지 않고 Java를 다뤄보고 싶어서 자기개발을 위한 휴식기
+### 프로젝트
+- DJ Cloud for Java (2014.06~2014.08)
+    - 개요: Java 공부를 하기위해 Java 와 jquery를 이용한 웹하드 구현
+    - 참여기술: Java, Mybatis, Servlet, JSTL, jquery, MariaDB
+    - 주요기능 :
+        - 언어 선택, 미디어 뷰어 (이미지/동영상), 드래그/멀티/폴더 업로드, ContextMenu, 모바일 웹
+        - https://firebasestorage.googleapis.com/v0/b/conpingstore.appspot.com/o/djcloud.pdf?alt=media&token=3954213c-e7b4-4dec-a350-1ae61a7b164c
 
-  * **What:** A
+
+# 기술
+- Java
+- Android
+- Javascript
+- Typescript
+- AngularJS
+- Angular
+- Svelte
+- SvelteKit
+- Next.js
+- React
+- nestJS
+- D3.js
+- Crossfilter.js
+- Socket.io
+- Webpack
+- Module Federation
+- MongoDB
+- Oracle
+- Mysql
+- Mssql
+- graphql
