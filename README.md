@@ -4,7 +4,7 @@
 
 ### 담당업무
 
-개발팀장, 백엔드 · 프론트엔드 · Unity · 키오스크 런처 · CI/CD 전반 개발 및 관리
+개발팀장, 백엔드 · 프론트엔드 · Unity · 키오스크 런처 · CI/CD 전반 개발 및 관리, AI 에이전트 기반 개발 하네스 설계·구축
 
 ### 프로젝트
 
@@ -20,6 +20,7 @@
     - GitHub Actions 기반 CI/CD와 Azure Container Apps 자동 배포 체계를 신규 구축하고 태그 기반 상용 릴리즈 프로세스 정립
     - Claude API를 활용한 릴리즈 노트 자동 생성·GitHub Release 자동 발행, MS Teams 배포 알림·Notion 배포 이력 자동화 체계 신규 구축
     - Claude Code PR 자동 리뷰를 백엔드·프론트엔드·Unity 전 레포에 도입하여 기존에 없던 자동 코드 리뷰 1차 게이트 구축
+    - AI 에이전트가 안정적으로 코드를 작성·검증하도록 개발 하네스를 설계·구축 — 배포 규칙 등 중요한 팀 약속을 `CLAUDE.md`에 명문화하고, 린트·테스트를 CI 워크플로우에서 강제하며, 스프린트마다 plan 문서를 작성해 작업 범위와 설계를 사전 정렬. 단일 스펙 레포(SSOT), 골든 벡터 파리티 검증, 단위·E2E 테스트를 에이전트의 가드레일과 피드백 루프로 활용
     - Git 브랜치·배포 전략을 새롭게 정의하여 `PR 머지 = 상용 배포`, `development 직접 머지 = QA 배포`로 릴리즈 프로세스 표준화
   - **Impact:**
     - 기존에 없던 개발·배포·릴리즈·코드 리뷰 체계를 구축하여 팀의 개발 프로세스 표준화
@@ -422,4 +423,4 @@ MagicCloud 개발 담당, 보안 USB DB 담당
 | CI/CD·자동화 | GitHub Actions, Jenkins, AWS CodeDeploy, 배포 자동화, 릴리즈 자동화 |
 | 인증·결제 | OAuth 2.0, OpenID Connect, Microsoft Entra ID, Firebase Authentication, Stripe, TossPayments |
 | 테스트·API 문서화 | Unit Test, E2E Test, Swagger, OpenAPI |
-| AI 개발 도구 | Claude Code, Claude API, AI 기반 코드 리뷰 및 업무 자동화 |
+| AI 개발 도구 | Claude Code, Claude API, 하네스 엔지니어링, AI 기반 코드 리뷰 및 업무 자동화 |
